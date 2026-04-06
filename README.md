@@ -14,3 +14,7 @@ Make sure you are in the root directory of the project.
 ```bash
 python src/main.py <input_file>
 Example: python src/main.py test/input1.txt
+
+**### Written Portion**
+Questions from written portion is in the "PA3 Written Portion.pdf" document
+
