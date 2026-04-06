@@ -48,6 +48,7 @@ Input has at least K+3 non-blank lines.
 ## Written Portion
 ### Q1: Runtime of 10 files
 ![alt text](image.png)
+
 Question 1 is also in the "PA3 Written Portion.pdf" document
 ### Q2 & Q3: 
 Questions from written portion is in the "PA3 Written Portion.pdf" document
