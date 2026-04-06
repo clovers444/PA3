@@ -1,5 +1,6 @@
 import argparse
 import sys
+import time
 from solution import max_value_common_subsequence
  
  
@@ -50,6 +51,13 @@ def main():
         metavar="FILE",
         help="Path to input file (default: read from stdin)",
     )
+
+    parser.add_argument(
+    "-t", "--time",
+    action="store_true",
+    help="Print runtime after solving",
+    )
+    
     args = parser.parse_args()
  
     # Open the requested source
@@ -68,13 +76,18 @@ def main():
     finally:
         if args.file:
             stream.close()
-    
+
     # Compute the maximum value and the longest common subsequence
+    start = time.perf_counter()
     max_val, subseq = max_value_common_subsequence(K, char_values, A, B)
+    elapsed = time.perf_counter() - start
     
     # Print the results
     print(max_val)
     print(subseq)
+
+    if args.time:
+        print(f"Runtime: {elapsed:.6f}s", file=sys.stderr)
  
  
 if __name__ == "__main__":
