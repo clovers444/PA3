@@ -1,0 +1,8 @@
+5
+m 3
+n 6
+o 2
+p 8
+q 1
+mnopqmnopq
+qponmqponm
